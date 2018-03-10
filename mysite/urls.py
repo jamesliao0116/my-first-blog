@@ -23,7 +23,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
-    url(r'^static/(?P<path>.*)', 'django.views.static.serve',
-        {'document_root': '/Users/ya25854/django1/mysite/blog/static/img'}),
 ]
 
